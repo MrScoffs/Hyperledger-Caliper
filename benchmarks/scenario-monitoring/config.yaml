@@ -1,0 +1,15 @@
+test:
+  name: NodeHealthMonitor Benchmark
+  description: Teste de desempenho do contrato NodeHealthMonitor na rede Besu local
+  workers:
+    number: 1
+  rounds:
+    - label: ReportStatus
+      description: Envia relatórios de status simulando nós da rede
+      txNumber: 50
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 3
+      workload:
+        module: benchmarks/scenario-monitoring/workload/reportStatus.js

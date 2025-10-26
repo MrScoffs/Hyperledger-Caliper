@@ -1,0 +1,1 @@
+TPS,Sucesso,Falha,Taxa_Sucesso(%),Send_Rate,Throughput,Eficiencia(%),Lat_Min,Lat_Avg,Lat_Max,Duracao(s)

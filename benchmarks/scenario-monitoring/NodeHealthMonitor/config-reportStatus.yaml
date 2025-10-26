@@ -30,7 +30,7 @@ test:
 
 monitors:
   resource:
-    - module: docker
+    - module: none
       options:
         interval: 5
         cpuUsageNormalization: true # Normalizes CPU usage values to a 0-100% range

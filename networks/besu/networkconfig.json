@@ -7,10 +7,11 @@
         "url": "ws://127.0.0.1:8646",
         "fromAddress": "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
         "fromAddressPrivateKey": "0x8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c692be63",
+        "chainId": 381660001,
         "transactionConfirmationBlocks": 1,
         "contracts": {
             "NodeHealthMonitor": {
-                "address": "0x686AfD6e502A81D2e77f2e038A23C0dEf4949A20",
+                "address": "0xa50a51c09a5c451C52BB714527E1974b686D8e77",
                 "estimateGas": true,
                 "gas": {
                     "reportStatus": 1000000000,

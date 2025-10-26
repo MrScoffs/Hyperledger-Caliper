@@ -1,0 +1,70 @@
+2025.10.25-21:37:53.594[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/cpqd/Documentos/Hyperleadger-Caliper
+2025.10.25-21:37:53.595[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/cpqd/Documentos/Hyperleadger-Caliper/benchmarks/scenario-monitoring/config.yaml
+2025.10.25-21:37:53.595[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/cpqd/Documentos/Hyperleadger-Caliper/networks/besu/networkconfig.json
+2025.10.25-21:37:53.596[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: ethereum
+2025.10.25-21:37:54.161[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2025.10.25-21:37:54.161[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2025.10.25-21:37:54.161[32m info [39m [caliper] [caliper-engine] 	Skipping start commands due to benchmark flow conditioning
+2025.10.25-21:37:54.162[32m info [39m [caliper] [caliper-engine] 	Skipping initialization phase due to benchmark flow conditioning
+2025.10.25-21:37:54.162[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2025.10.25-21:37:54.205[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2025.10.25-21:37:54.208[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2025.10.25-21:37:54.213[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2025.10.25-21:37:54.214[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 1
+2025.10.25-21:37:54.220[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2025.10.25-21:37:54.221[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2025.10.25-21:37:54.221[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be connected...
+2025.10.25-21:37:54.813[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/cpqd/Documentos/Hyperleadger-Caliper
+2025.10.25-21:37:54.821[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/cpqd/Documentos/Hyperleadger-Caliper/benchmarks/scenario-monitoring/config.yaml
+2025.10.25-21:37:54.821[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/cpqd/Documentos/Hyperleadger-Caliper/networks/besu/networkconfig.json
+2025.10.25-21:37:54.821[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: ethereum
+2025.10.25-21:37:55.622[32m info [39m [caliper] [worker-orchestrator] 	1 workers connected, progressing to worker assignment phase.
+2025.10.25-21:37:55.622[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2025.10.25-21:37:55.623[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be assigned...
+2025.10.25-21:37:55.867[32m info [39m [caliper] [worker-orchestrator] 	1 workers assigned, progressing to worker initialization phase.
+2025.10.25-21:37:55.868[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 1 workers to be ready...
+2025.10.25-21:37:55.869[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2025.10.25-21:37:55.893[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2025.10.25-21:37:55.894[32m info [39m [caliper] [worker-orchestrator] 	1 workers ready, progressing to test preparation phase.
+2025.10.25-21:37:55.894[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (ReportStatus)
+2025.10.25-21:37:55.896[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2025.10.25-21:37:56.039[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2025.10.25-21:37:56.042[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2025.10.25-21:37:56.042[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2025.10.25-21:37:56.044[32m info [39m [caliper] [worker-orchestrator] 	1 workers prepared, progressing to test phase.
+2025.10.25-21:37:56.045[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2025.10.25-21:37:56.047[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2025.10.25-21:37:56.107[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2025.10.25-21:38:01.079[32m info [39m [caliper] [default-observer] 	[ReportStatus Round 0 Transaction Info] - Submitted: 13 Succ: 3 Fail:0 Unfinished:10
+2025.10.25-21:38:06.047[32m info [39m [caliper] [default-observer] 	[ReportStatus Round 0 Transaction Info] - Submitted: 28 Succ: 18 Fail:0 Unfinished:10
+2025.10.25-21:38:11.048[32m info [39m [caliper] [default-observer] 	[ReportStatus Round 0 Transaction Info] - Submitted: 43 Succ: 33 Fail:0 Unfinished:10
+2025.10.25-21:38:16.050[32m info [39m [caliper] [default-observer] 	[ReportStatus Round 0 Transaction Info] - Submitted: 50 Succ: 48 Fail:0 Unfinished:2
+2025.10.25-21:38:21.052[32m info [39m [caliper] [default-observer] 	[ReportStatus Round 0 Transaction Info] - Submitted: 50 Succ: 48 Fail:0 Unfinished:2
+2025.10.25-21:38:26.053[32m info [39m [caliper] [default-observer] 	[ReportStatus Round 0 Transaction Info] - Submitted: 50 Succ: 48 Fail:0 Unfinished:2
+2025.10.25-21:38:28.214[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2025.10.25-21:38:33.222[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2025.10.25-21:38:33.223[32m info [39m [caliper] [report-builder] 	### Test result ###
+2025.10.25-21:38:33.233[32m info [39m [caliper] [report-builder] 	
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name         | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|--------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| ReportStatus | 50   | 0    | 3.1             | 15.06           | 0.48            | 3.67            | 1.6              |
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2025.10.25-21:38:33.235[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (ReportStatus) in 31.107 seconds
+2025.10.25-21:38:33.235[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2025.10.25-21:38:33.235[32m info [39m [caliper] [report-builder] 	### All test results ###
+2025.10.25-21:38:33.237[32m info [39m [caliper] [report-builder] 	
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name         | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|--------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| ReportStatus | 50   | 0    | 3.1             | 15.06           | 0.48            | 3.67            | 1.6              |
++--------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2025.10.25-21:38:33.259[32m info [39m [caliper] [report-builder] 	Generated report with path /home/cpqd/Documentos/Hyperleadger-Caliper/report.html
+2025.10.25-21:38:33.259[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2025.10.25-21:38:33.260[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2025.10.25-21:38:33.261[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 37.367 seconds. Total rounds: 1. Successful rounds: 1. Failed rounds: 0.
+2025.10.25-21:38:33.261[32m info [39m [caliper] [caliper-engine] 	Skipping end command due to benchmark flow conditioning
+2025.10.25-21:38:33.262[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished
+2025.10.25-21:38:33.262[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
