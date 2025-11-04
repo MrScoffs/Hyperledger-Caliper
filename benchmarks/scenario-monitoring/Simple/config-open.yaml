@@ -19,36 +19,10 @@ test:
       rateControl:
         type: fixed-rate
         opts:
-          tps: 50
+          tps: 180
       workload:
         module: benchmarks/scenario-monitoring/Simple/open.js
         arguments: *simple-args
-
-
-    - label: query
-      description: Test description for the query performance of the deployed contract.
-      txNumber: *number-of-accounts
-      rateControl:
-        type: fixed-rate
-        opts:
-          tps: 100
-      workload:
-        module: benchmarks/scenario-monitoring/Simple/query.js
-        arguments: *simple-args
-
-        
-    - label: transfer
-      description: Test description for transfering money between accounts.
-      txNumber: 50
-      rateControl:
-        type: fixed-rate
-        opts:
-          tps: 5
-      workload:
-        module: benchmarks/scenario-monitoring/Simple/transfer.js
-        arguments:
-          << : *simple-args
-          money: 100
 
 monitors:
   resource:

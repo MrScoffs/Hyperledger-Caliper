@@ -1,0 +1,8 @@
+Name,Succ,Fail,Send Rate (TPS),Max Latency (s),Min Latency (s),Avg Latency (s),Throughput (TPS),Report,TPS
+transfer,50,0,51.3,12.21,11.27,11.72,4.1,transfer_report_50_20251104-110822,50
+transfer,50,0,61.7,15.84,15.05,15.42,3.2,transfer_report_60_20251104-110848,60
+transfer,50,0,71.9,1.33,0.65,0.95,37.2,transfer_report_70_20251104-110918,70
+transfer,50,0,82.4,16.48,15.87,16.13,3.0,transfer_report_80_20251104-110948,80
+transfer,50,0,92.4,16.37,15.85,16.03,3.1,transfer_report_90_20251104-111018,90
+transfer,50,0,91.2,16.50,15.97,16.16,3.0,transfer_report_100_20251104-111048,100
+transfer,50,0,91.6,16.63,16.10,16.29,3.0,transfer_report_110_20251104-111118,110

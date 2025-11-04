@@ -10,7 +10,7 @@
         "transactionConfirmationBlocks": 1,
         "contracts": {
             "NodeHealthMonitor": {
-                "address": "0x42699A7612A82f1d9C36148af9C77354759b210b",
+                "address": "",
                 "estimateGas": true,
                 "gas": {
                     "reportStatus": 1000000000,
@@ -190,7 +190,7 @@
                 ]
             },
             "simple": {
-                "address": "0xA7f6A472441bd82F93f7B4c240Db731f35a36349",
+                "address": "0x42699A7612A82f1d9C36148af9C77354759b210b",
                 "estimateGas": true,
                 "gas": {
                     "open": 1000000000,
@@ -261,7 +261,7 @@
                 ]
             },
             "MyNFT": {
-                "address": "0x17681761781203A3FBE6b33FB3269f1eBdC56129",
+                "address": "",
                 "estimateGas": true,
                 "gas": {
                     "mint": 1000000000,

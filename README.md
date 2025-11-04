@@ -153,7 +153,7 @@ npx caliper launch manager \
 ```
 npx caliper launch manager \
   --caliper-workspace ./ \
-  --caliper-benchconfig benchmarks/scenario-monitoring/ERC721/config.yaml \
+  --caliper-benchconfig benchmarks/scenario-monitoring/Simple/config.yaml \
   --caliper-networkconfig ./networks/besu/networkconfig.json \
   --caliper-bind-sut besu:latest \
   --caliper-flow-skip-install
@@ -163,7 +163,7 @@ npx caliper launch manager \
 ```
 npx caliper launch manager \
   --caliper-workspace ./ \
-  --caliper-benchconfig benchmarks/scenario-monitoring/Simple/config.yaml \
+  --caliper-benchconfig benchmarks/scenario-monitoring/ERC721/config.yaml \
   --caliper-networkconfig ./networks/besu/networkconfig.json \
   --caliper-bind-sut besu:latest \
   --caliper-flow-skip-install
@@ -172,21 +172,15 @@ npx caliper launch manager \
 ## Execução Automatizada (Scripts)
 ### 1. Executar uma bateria completa de testes
 ```
-python run_test_local.py
+python3 run_testes_simple.py
 ```
 Este script executa todos os testes definidos, gerando relatórios em HTML para cada rodada de iteração.
 
 ### 2. Extração de Resultados para Análise
-a. Extrair métricas agregadas (TPS, Latência, Taxa de Sucesso)
+a. Extrair métricas
 
 ```
-cd src/
-python extract_report_to_csv.py
-```
-
-b. Extrair métricas de recursos (CPU, memória, disco, rede)
-```
-python extract_resource_to_csv.py
+python3 extract_csv.py
 ```
 
 ## Visualização de Resultados
