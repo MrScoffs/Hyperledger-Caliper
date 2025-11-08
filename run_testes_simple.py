@@ -2,11 +2,11 @@ import os
 import subprocess
 from datetime import datetime
 
-num_testes = 1
+num_testes = 5
 # Caminhos para cada configuração de função
 BENCHMARK_FILES = {
-    "open": "benchmarks/scenario-monitoring/Simple/config-open.yaml",
-    "query": "benchmarks/scenario-monitoring/Simple/config-query.yaml",
+    #"open": "benchmarks/scenario-monitoring/Simple/config-open.yaml",
+    #"query": "benchmarks/scenario-monitoring/Simple/config-query.yaml",
     "transfer": "benchmarks/scenario-monitoring/Simple/config-transfer.yaml",
     #"simple": "benchmarks/scenario-monitoring/Simple/config.yaml",
     #"getLatestStatus": 'benchmarks/scenario-monitoring/NodeHealthMonitor/config-getLatestStatus.yaml',
@@ -14,9 +14,9 @@ BENCHMARK_FILES = {
     #"statusReports": 'benchmarks/scenario-monitoring/NodeHealthMonitor/config-statusReports.yaml'
 }
 
-TPS_LIST_OPEN = [40, 60, 80, 100, 120, 140, 160, 180] #open
+TPS_LIST_OPEN = [60, 80, 100, 120, 140, 160, 180] #open
 TPS_LIST_QUERY = [100, 200, 300, 400, 500, 600, 700] # query
-TPS_LIST_TRANSFER = [50, 60, 70, 80, 90, 100, 110] # transfer
+TPS_LIST_TRANSFER = [70, 80, 90, 100, 110] # transfer
 TPS_LIST = [10]
 
 # Atualiza o valor de TPS no arquivo de benchmark YAML

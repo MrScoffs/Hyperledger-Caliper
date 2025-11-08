@@ -1,6 +1,6 @@
 # 📘 NodeHealthMonitor Performance Evaluation using Hyperledger Caliper
 
-Este repositório apresenta uma estrutura de testes de carga automatizados para o contrato inteligente NodeHealthMonitor, utilizando o framework Hyperledger Caliper sobre uma rede permissionada baseada em Hyperledger Besu.
+Este repositório apresenta uma estrutura de testes de carga automatizados para o contrato inteligente NodeHealthMonitor dentre outros, utilizando o framework Hyperledger Caliper sobre uma rede permissionada baseada em Hyperledger Besu.
 
 ---
 
@@ -10,10 +10,10 @@ Este repositório apresenta uma estrutura de testes de carga automatizados para 
 - **Docker** e **Docker Compose**
 - **Rede Blockchain Besu operacional**
   - Você pode utilizar uma rede própria **ou** basear-se no tutorial:  
-    🔗 [besu-production-docker](https://github.com/jeffsonsousa/besu-production-docker)
+    🔗 [besu-production-docker](https://github.com/viniciusSt1/Hyperleadger-Besu)
 - **Contratos Inteligentes implantados** na rede
   - Use:  
-    🔗 [contracts-node-health-monitor](https://github.com/jeffsonsousa/contracts-node-health-monitor)
+    🔗 [contracts-node-health-monitor](https://github.com/viniciusSt1/Hardhat-contracts)
 
 Após a implantação dos contratos, será possível extrair os **endereços de cada contrato** e inseri-los no arquivo de configuração do Caliper para os testes de desempenho.
 
@@ -52,7 +52,7 @@ Esse arquivo define os parâmetros de conexão com a rede Besu:
     "command": {}
   },
   "ethereum": {
-    "url": "ws://localhost:8546",
+    "url": "ws://localhost:8545",
     "fromAddress": "CARTEIRA_PUBLICA_ADM",
     "fromAddressPrivateKey": "CHAVE_PRIVADA_ADM",
     "transactionConfirmationBlocks": 10,
@@ -70,71 +70,6 @@ Esse arquivo define os parâmetros de conexão com a rede Besu:
     }
   }
 }
-```
-### Arquivo de Benchmark (exemplo config-createDid.yaml)
-```
-simpleArgs: &simple-args
-  reportStatus:
-    [
-      "2",
-      "0xd49c718fabf7b90f17542e2e0989e3de8a2e1241c05d03e53abe6a1b2bdb197d",
-      "Problema Detectado"
-    ]
-  numberOfAccounts: &number-of-accounts 5
-  timeOfTest: &time-of-test 20
-
-test:
-  name: NodeHealthMonitor Load Test
-  description: Avalia o desempenho do contrato NodeHealthMonitor.
-  workers:
-    number: 1
-  rounds:
-    - label: reportStatus
-      txDuration: *time-of-test
-      rateControl:
-        type: fixed-rate
-        opts:
-          tps: 200
-      workload:
-        module: benchmarks/scenario-monitoring/NodeHealthMonitor/reportStatus.js
-        arguments: *simple-args
-
-monitors:
-  resource:
-    - module: docker
-      options:
-        interval: 5
-        cpuUsageNormalization: true
-        containers:
-          - /node1
-          - /node2
-          - /node3
-          - /node4
-          - /node5
-          - /node6
-        stats:
-          memory:
-            max: true
-            avg: true
-          cpu:
-            max: true
-            avg: true
-          networkIO:
-            enabled: true
-          diskIO:
-            enabled: true
-        charting:
-          bar:
-            metrics: [Memory(avg), CPU%(avg)]
-          polar:
-            metrics: [all]
-
-observer:
-  type: local
-  interval: 5
-
-
-```
 
 ## Execução de Testes
 ### Execução Única
@@ -171,6 +106,7 @@ npx caliper launch manager \
 
 ## Execução Automatizada (Scripts)
 ### 1. Executar uma bateria completa de testes
+
 ```
 python3 run_testes_simple.py
 ```
@@ -184,22 +120,6 @@ python3 extract_csv.py
 ```
 
 ## Visualização de Resultados
-Os notebooks Jupyter permitem a visualização gráfica dos resultados:
-### Gráficos de Uso de Recursos (CPU, Memória)
 ```
-jupyter notebook plot_resources.ipynb
+python3 analise.py
 ```
-### Gráficos de Desempenho (TPS, Latência)
-```
-jupyter notebook plot_summary.ipynb
-```
-## Considerações Finais
-
-Este projeto permite testes de carga no contrato NodeHealthMonitor, medindo desempenho funcional e impacto computacional. Ideal para:
-
-* Monitoramento descentralizado em blockchain
-* Benchmark de infraestrutura de rede
-* Avaliação de escalabilidade e resiliência
-
-Para contribuições, dúvidas ou extensões, sinta-se à vontade para entrar em contato comigo por email: jeffson.celeiro@gmail.com, jcsousa@cpqd.com.br e jeffson.sousa@icen.ufpa.br. 
-
