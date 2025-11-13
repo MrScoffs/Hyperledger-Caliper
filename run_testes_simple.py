@@ -1,13 +1,14 @@
 import os
 import subprocess
+import time
 from datetime import datetime
 
 num_testes = 5
 # Caminhos para cada configuração de função
 BENCHMARK_FILES = {
-    #"open": "benchmarks/scenario-monitoring/Simple/config-open.yaml",
-    #"query": "benchmarks/scenario-monitoring/Simple/config-query.yaml",
-    "transfer": "benchmarks/scenario-monitoring/Simple/config-transfer.yaml",
+     "open": "benchmarks/scenario-monitoring/Simple/config-open.yaml",
+     "query": "benchmarks/scenario-monitoring/Simple/config-query.yaml",
+     "transfer": "benchmarks/scenario-monitoring/Simple/config-transfer.yaml",
     #"simple": "benchmarks/scenario-monitoring/Simple/config.yaml",
     #"getLatestStatus": 'benchmarks/scenario-monitoring/NodeHealthMonitor/config-getLatestStatus.yaml',
     #"reportStatus": 'benchmarks/scenario-monitoring/NodeHealthMonitor/config-reportStatus.yaml',
@@ -58,6 +59,10 @@ def run_test(tps, function_name, benchmark_file):
         print(f"✅ Relatório salvo em {report_path}")
     else:
         print(f"⚠️ Relatório não encontrado para {function_name} @ {tps} TPS.")
+
+    # Aguarda para permitir que as conexões WebSocket sejam fechadas
+    print(f"⏳ Aguardando 10 segundos antes do próximo teste...")
+    time.sleep(10)
 
 # Executa todos os testes
 if __name__ == "__main__":

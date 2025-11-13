@@ -1,0 +1,71 @@
+============================================================
+RELATORIO DE ANALISE DE EXPERIMENTOS
+============================================================
+
+Total de experimentos: 18
+Data da analise: 2025-11-12 15:55:28.631619
+
+============================================================
+MELHOR CONFIGURACAO (por throughput)
+============================================================
+
+Experimento: 6n-10s-qbft-v25.10.0_20251112_151552
+
+Configuracao:
+  Nos: 6
+  Tempo de bloco: 10s
+  Consenso: QBFT
+  Versao Besu: 25.10.0
+
+Metricas:
+  Throughput: 14.18 TPS
+  Latencia media: 4.1185s
+  CPU medio: 0.04%
+  Memoria media: 0.89 GB
+
+============================================================
+RANKING COMPLETO (ordenado por throughput)
+============================================================
+
+6n-10s-qbft-v25.10.0_20251112_151552: 14.18 TPS
+6n-5s-qbft-v24.7.0_20251112_154228: 14.18 TPS
+8n-5s-qbft-v25.10.0_20251112_152909: 14.18 TPS
+6n-2s-qbft-v25.10.0_20251112_153417: 14.18 TPS
+6n-5s-qbft-v25.10.0_20251112_152458: 14.18 TPS
+10n-5s-qbft-v25.10.0_20251112_153126: 14.18 TPS
+6n-10s-qbft-v25.10.0_20251112_153617: 14.18 TPS
+4n-5s-qbft-v25.10.0_20251112_152659: 14.18 TPS
+6n-5s-qbft-v25.9.0_20251112_154028: 14.18 TPS
+6n-5s-qbft-v25.9.0_20251112_152004: 14.18 TPS
+6n-5s-qbft-v25.10.0_20251112_150448: 14.18 TPS
+10n-5s-qbft-v25.10.0_20251112_151117: 14.18 TPS
+6n-2s-qbft-v25.10.0_20251112_151352: 14.18 TPS
+6n-5s-ibft-v25.10.0_20251112_151805: 14.18 TPS
+6n-5s-ibft-v25.10.0_20251112_153816: 14.18 TPS
+4n-5s-qbft-v25.10.0_20251112_150656: 14.18 TPS
+6n-5s-qbft-v24.7.0_20251112_152203: 14.18 TPS
+8n-5s-qbft-v25.10.0_20251112_150852: 14.18 TPS
+
+============================================================
+OBSERVACOES
+============================================================
+
+Impacto do numero de nos:
+  4 nos: 14.18 TPS medio
+  6 nos: 14.18 TPS medio
+  8 nos: 14.18 TPS medio
+  10 nos: 14.18 TPS medio
+
+Impacto do tempo de bloco:
+  2s: 14.18 TPS medio
+  5s: 14.18 TPS medio
+  10s: 14.18 TPS medio
+
+Impacto do consenso:
+  QBFT: 14.18 TPS medio
+  IBFT: 14.18 TPS medio
+
+Impacto da versao:
+  24.7.0: 14.18 TPS medio
+  25.10.0: 14.18 TPS medio
+  25.9.0: 14.18 TPS medio
