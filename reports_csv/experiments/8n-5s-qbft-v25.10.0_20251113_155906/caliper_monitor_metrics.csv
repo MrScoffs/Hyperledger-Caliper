@@ -1,0 +1,25 @@
+Name,CPU%(max),CPU%(avg),Memory(max) [MB],Memory(avg) [MB],Traffic In [B],Traffic Out [B],Disc Write [KB],Disc Read [B],Test Type,Disc Write [MB]
+/node-besu5,0.32125,0.18625,689,689,0.00,0.00,0.00,0.00,query_report,
+/node-besu4,0.13375,0.09625,892,884,0.00,0.00,96.0,0.00,query_report,
+/node-besu1,0.04625,0.0425,879,875,0.00,0.00,280,0.00,query_report,
+/node-besu8,0.3525,0.19625,810,810,0.00,0.00,128,0.00,query_report,
+/node-besu7,0.14875,0.1125,769,769,0.00,0.00,268,0.00,query_report,
+/node-besu2,0.29625,0.175,625,624,0.00,0.00,20.0,0.00,query_report,
+/node-besu6,0.06875,0.06,902,902,0.00,0.00,744,0.00,query_report,
+/node-besu3,0.0975,0.06625,702,702,0.00,0.00,232,0.00,query_report,
+/node-besu5,1.59375,1.01625,688,674,0.00,0.00,,0.00,open_report,1.01
+/node-besu4,1.7325,1.0725,845,631,0.00,0.00,,0.00,open_report,2.05
+/node-besu1,2.2925,1.3425,871,559,0.00,0.00,,0.00,open_report,2.63
+/node-besu8,2.385,1.205,810,618,0.00,0.00,,0.00,open_report,2.20
+/node-besu7,1.72875,1.02,769,680,0.00,0.00,,0.00,open_report,1.25
+/node-besu2,1.8575,1.06875,624,574,0.00,0.00,,0.00,open_report,1.28
+/node-besu6,2.09125,1.195,904,807,0.00,0.00,,0.00,open_report,1.13
+/node-besu3,1.47625,0.99,687,666,0.00,0.00,,0.00,open_report,1.29
+/node-besu5,0.78875,0.4075,706,698,0.00,0.00,0.00,0.00,transfer_report,
+/node-besu4,1.03875,0.5325,981,948,0.00,0.00,60.0,0.00,transfer_report,
+/node-besu1,0.98875,0.51,888,884,0.00,0.00,148,0.00,transfer_report,
+/node-besu8,0.9075,0.505,811,811,0.00,0.00,0.00,0.00,transfer_report,
+/node-besu7,1.86625,0.94375,772,771,0.00,0.00,0.00,0.00,transfer_report,
+/node-besu2,0.94,0.48125,626,625,0.00,0.00,0.00,0.00,transfer_report,
+/node-besu6,1.59875,0.8125,1.02e+3,973,0.00,0.00,0.00,0.00,transfer_report,
+/node-besu3,2.18125,1.11625,715,708,0.00,0.00,0.00,0.00,transfer_report,

@@ -105,12 +105,26 @@ npx caliper launch manager \
 ``` 
 
 ## Execução Automatizada (Scripts)
+
+IMPORTANTE: O script run_testes_simple.py agora inclui:
+- Verificacao automatica de conectividade com a rede Besu
+- Implantacao automatica do contrato Simple antes dos testes
+- Atualizacao automatica do networkconfig.json com o endereco do novo contrato
+- Tempo de estabilizacao adicional (15 segundos) apos deploy do contrato
+
 ### 1. Executar uma bateria completa de testes
 
 ```
 python3 run_testes_simple.py
 ```
-Este script executa todos os testes definidos, gerando relatórios em HTML para cada rodada de iteração.
+Este script executa todos os testes definidos, gerando relatorios em HTML para cada rodada de iteracao.
+
+O script realiza automaticamente:
+1. Verificacao de conectividade com a rede Besu
+2. Deploy do contrato Simple (se a rede foi reiniciada)
+3. Aguardo de estabilizacao (15 segundos)
+4. Execucao dos benchmarks para cada funcao (open, query, transfer)
+5. Geracao de relatorios HTML e CSV
 
 ### 2. Extração de Resultados para Análise
 a. Extrair métricas

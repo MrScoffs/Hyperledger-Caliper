@@ -1,0 +1,19 @@
+Experimento: 6n-5s-qbft-v24.7.0
+Timestamp: 20251113_161939
+Data: qui 13 nov 2025 16:23:11 -03
+=====================================
+Parametros:
+  Nos: 6
+  Tempo de bloco: 5s
+  Consenso: qbft
+  Versao Besu: 24.7.0
+
+Configuracao:
+  Genesis: /home/cpqd/Documentos/Hyperleadger-Besu/genesis_QBFT.json
+  Besu dir: /home/cpqd/Documentos/Hyperleadger-Besu/besu-24.7.0
+
+Resultados:
+  HTML: /home/cpqd/Documentos/Hyperleadger-Besu/../Hyperleadger-Caliper/reports_htmls/experiments/6n-5s-qbft-v24.7.0_20251113_161939/
+  CSV: /home/cpqd/Documentos/Hyperleadger-Besu/../Hyperleadger-Caliper/reports_csv/experiments/6n-5s-qbft-v24.7.0_20251113_161939/
+
+Status: CONCLUIDO

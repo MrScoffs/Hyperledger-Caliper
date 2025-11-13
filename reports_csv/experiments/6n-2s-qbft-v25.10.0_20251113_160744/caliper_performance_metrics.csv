@@ -1,0 +1,4 @@
+Name,Succ,Fail,Send Rate (TPS),Max Latency (s),Min Latency (s),Avg Latency (s),Throughput (TPS),Test Type
+query,1000,0,634.5,0.04,0.00,0.00,633.7,query_report
+open,1000,0,52.4,28.40,6.98,18.06,28.2,open_report
+transfer,50,0,101.0,2.46,1.62,1.75,17.1,transfer_report

@@ -35,6 +35,10 @@ monitors:
           - /node-besu4
           - /node-besu5
           - /node-besu6
+          - /node-besu7
+          - /node-besu8
+          - /node-besu9
+          - /node-besu10
         stats:
           memory:
             max: true

@@ -1,0 +1,19 @@
+Experimento: 6n-5s-ibft-v25.10.0
+Timestamp: 20251113_161546
+Data: qui 13 nov 2025 16:19:28 -03
+=====================================
+Parametros:
+  Nos: 6
+  Tempo de bloco: 5s
+  Consenso: ibft
+  Versao Besu: 25.10.0
+
+Configuracao:
+  Genesis: /home/cpqd/Documentos/Hyperleadger-Besu/genesis_IBFT.json
+  Besu dir: /home/cpqd/Documentos/Hyperleadger-Besu/besu-25.10.0
+
+Resultados:
+  HTML: /home/cpqd/Documentos/Hyperleadger-Besu/../Hyperleadger-Caliper/reports_htmls/experiments/6n-5s-ibft-v25.10.0_20251113_161546/
+  CSV: /home/cpqd/Documentos/Hyperleadger-Besu/../Hyperleadger-Caliper/reports_csv/experiments/6n-5s-ibft-v25.10.0_20251113_161546/
+
+Status: CONCLUIDO

@@ -1,0 +1,19 @@
+Experimento: 4n-5s-qbft-v25.10.0
+Timestamp: 20251113_155536
+Data: qui 13 nov 2025 15:58:55 -03
+=====================================
+Parametros:
+  Nos: 4
+  Tempo de bloco: 5s
+  Consenso: qbft
+  Versao Besu: 25.10.0
+
+Configuracao:
+  Genesis: /home/cpqd/Documentos/Hyperleadger-Besu/genesis_QBFT.json
+  Besu dir: /home/cpqd/Documentos/Hyperleadger-Besu/besu-25.10.0
+
+Resultados:
+  HTML: /home/cpqd/Documentos/Hyperleadger-Besu/../Hyperleadger-Caliper/reports_htmls/experiments/4n-5s-qbft-v25.10.0_20251113_155536/
+  CSV: /home/cpqd/Documentos/Hyperleadger-Besu/../Hyperleadger-Caliper/reports_csv/experiments/4n-5s-qbft-v25.10.0_20251113_155536/
+
+Status: CONCLUIDO
