@@ -10,10 +10,10 @@ Este repositório apresenta uma estrutura de testes de carga automatizados para 
 - **Docker** e **Docker Compose**
 - **Rede Blockchain Besu operacional**
   - Você pode utilizar uma rede própria **ou** basear-se no tutorial:  
-    🔗 [besu-production-docker](https://github.com/viniciusSt1/Hyperleadger-Besu)
+    🔗 [besu-qbft-network](https://github.com/Freitasthur1/besu-qbft-network)
 - **Contratos Inteligentes implantados** na rede
   - Use:  
-    🔗 [contracts-node-health-monitor](https://github.com/viniciusSt1/Hardhat-contracts)
+    🔗 [contracts-node-health-monitor](https://github.com/Freitasthur1/contracts-node-health-monitor)
 
 Após a implantação dos contratos, será possível extrair os **endereços de cada contrato** e inseri-los no arquivo de configuração do Caliper para os testes de desempenho.
 
